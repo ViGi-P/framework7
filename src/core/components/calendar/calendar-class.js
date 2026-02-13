@@ -1604,6 +1604,8 @@ class Calendar extends Framework7Class {
       toolbar: calendar.params.monthPickerToolbar,
       rotateEffect: false,
       toolbarCloseText: calendar.params.monthPickerCloseText,
+      renderToolbar: (picker) =>
+        `<div class="toolbar toolbar-top"><div class="toolbar-inner"><div class="left"></div><div class="right"><a class="link popover-close"><i class="icon icon-close"></i>${picker.params.toolbarCloseText ? `<span>${picker.params.toolbarCloseText}</span>` : ''}</a></div></div></div>`,
       cols: [
         {
           values,
@@ -1681,6 +1683,8 @@ class Calendar extends Framework7Class {
       toolbar: calendar.params.yearPickerToolbar,
       rotateEffect: false,
       toolbarCloseText: calendar.params.yearPickerCloseText,
+      renderToolbar: (picker) =>
+        `<div class="toolbar toolbar-top"><div class="toolbar-inner"><div class="left"></div><div class="right"><a class="link popover-close"><i class="icon icon-close"></i>${picker.params.toolbarCloseText ? `<span>${picker.params.toolbarCloseText}</span>` : ''}</a></div></div></div>`,
       cols: [
         {
           values: years,
@@ -1752,6 +1756,8 @@ class Calendar extends Framework7Class {
       toolbar: calendar.params.timePickerToolbar,
       rotateEffect: false,
       toolbarCloseText: calendar.params.timePickerCloseText,
+      renderToolbar: (picker) =>
+        `<div class="toolbar toolbar-top"><div class="toolbar-inner"><div class="left"></div><div class="right"><a class="link popover-close"><i class="icon icon-close"></i>${picker.params.toolbarCloseText ? `<span>${picker.params.toolbarCloseText}</span>` : ''}</a></div></div></div>`,
       cols: [
         {
           values: hoursArr,
