@@ -11,6 +11,10 @@ class Calendar extends Framework7Class {
     const calendar = this;
 
     calendar.params = extend({}, app.params.calendar, params);
+    // dateFormat should not be deep-merged, instance value must fully replace app default
+    if (typeof params.dateFormat !== 'undefined') {
+      calendar.params.dateFormat = params.dateFormat;
+    }
 
     let $containerEl;
     if (calendar.params.containerEl) {
