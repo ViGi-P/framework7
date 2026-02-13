@@ -14,4 +14,8 @@ src/vue-temp
 src/core/shared/material-color-utils.js
 src/material-color-utilities
 .nova
+.claude
+.agents
+.codex
+.gemini
 package.json

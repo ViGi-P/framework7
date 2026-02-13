@@ -55,3 +55,8 @@ build/vue/components
 src/vue-temp/*.js
 
 woff2/
+
+.claude
+.agents
+.codex
+.gemini
